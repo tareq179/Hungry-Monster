@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking-Master</title>
+    <link rel="shortcut icon" href="meal-icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid icon">
+                <!-- <img src="meal-icon.png" alt=""> -->
+                <a class="navbar-brand"></a>
+                <div class="d-flex">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Recipes</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="input-group mb-3 searchInput mt-5 m-auto">
+            <input type="text" id="foodName" class="form-control" placeholder="Search for Meal..." aria-label="Recipient's username" aria-describedby="basic-addon2" value="" />
+            <div class="input-group-append">
+                <button id="searchBtn" class="btn text-white" type="button">
+            Search
+          </button>
+            </div>
+        </div>
+
+        <div class="alert bg-danger w-50 m-auto text-light" role="alert">
+            Input Shouldn't be Empty
+        </div>
+    </main>
+    <section>
+        <div id="foodDetails"></div>
+        <div id="foodItem"></div>
+    </section>
+
+    <section id="nothingFoundMsg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center m-auto p-5">
+                    <p><i class="fas fa-frown text-danger"></i></p>
+                    <h2>Sorry! No Food Items Found</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
